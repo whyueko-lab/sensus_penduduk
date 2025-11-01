@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+
+class ProvinsiSeeder extends Seeder
+{
+    public function run()
+    {
+        $data = [
+            ['nama_provinsi' => 'Jawa Barat'],
+            ['nama_provinsi' => 'Jawa Tengah'],
+            ['nama_provinsi' => 'Jawa Timur'],
+        ];
+
+        // Insert batch
+        $this->db->table('provinsi')->insertBatch($data);
+    }
+}
