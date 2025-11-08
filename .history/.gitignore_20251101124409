@@ -125,3 +125,10 @@ _modules/*
 /results/
 /phpunit*.xml
 
+# CodeIgniter 4
+writable/
+.env
+vendor/
+node_modules/
+.idea/
+*.log
